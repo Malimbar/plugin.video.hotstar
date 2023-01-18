@@ -4,7 +4,7 @@ from codequick.utils import urljoin_partial
 NAME = "plugin.video.botallen.hotstar"
 
 # URLs
-API_BASE_URL = "https://bifrost-api.hotstar.com"
+API_BASE_URL = "https://api.hotstar.com"
 PERSONA_BASE_URL = "https://persona.hotstar.com"
 IMG_BASE = "https://img1.hotstar.com/image/upload"
 IMG_FANART_H_URL = IMG_BASE + "/f_auto,w_1920,h_1080/%s.jpg"
