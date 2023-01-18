@@ -26,7 +26,7 @@ class HotstarAPI:
     def getMenu(self):
         url = url_constructor("/o/v2/menu")
         resp = self.get(
-            url, headers={"x-country-code": "in", "x-platform-code": "firetv"})
+            url, headers={"x-country-code": "za", "x-platform-code": "firetv"})
         return deep_get(resp, "body.results.menuItems")       # deep_get(resp["body"]["results"]["menuItems"][0]["subItem"][1], "subItem")
 
     def getPage(self, url):
@@ -133,7 +133,7 @@ class HotstarAPI:
         url = url_constructor("/um/v3/users/084f1867f85e4f109087e876ab8eb2ae/register?register-by=phone_otp")
         data = {
             "phone_number": mobile,
-            "country_prefix": "91",
+            "country_prefix": "27",
             "device_meta": {"device_name": "Chrome Browser on Windows"}
         }
         data = json.dumps(data)
@@ -265,7 +265,7 @@ class HotstarAPI:
             "x-hs-platform": "firetv",
             "x-hs-appversion": "7.41.0",
             "content-type": "application/json",
-            "x-country-code": "in",
+            "x-country-code": "za",
             "x-platform-code": "PCTV",
             "x-hs-usertoken": token,
             "x-hs-request-id": HotstarAPI.device_id,
