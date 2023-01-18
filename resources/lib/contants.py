@@ -4,14 +4,14 @@ from codequick.utils import urljoin_partial
 NAME = "plugin.video.botallen.hotstar"
 
 # URLs
-API_BASE_URL = "https://api.hotstar.com"
+API_BASE_URL = "https://bifrost-api.hotstar.com"
 PERSONA_BASE_URL = "https://persona.hotstar.com"
 IMG_BASE = "https://img1.hotstar.com/image/upload"
 IMG_FANART_H_URL = IMG_BASE + "/f_auto,w_1920,h_1080/%s.jpg"
 IMG_POSTER_V_URL = IMG_BASE + "/f_auto,t_web_vl_3x/%s.jpg"
 IMG_THUMB_H_URL = IMG_BASE + "/f_auto,t_web_hs_3x/%s.jpg"
 
-BASE_HEADERS = {"x-country-code": "IN", "x-platform-code": "ANDROID"}
+BASE_HEADERS = {"x-country-code": "ZA", "x-platform-code": "ANDROID"}
 CONTENT_TYPE = {"MOVIE": "movies", "SHOW": "tvshows",
                 "SEASON": "tvshows", "EPISODE": "episodes"}
 MEDIA_TYPE = {"MOVIE": "movie", "SHOW": "tvshow",
