@@ -59,7 +59,7 @@ def guestToken():
     hdr = {
         'hotstarauth': getAuth(includeST=True, persona=False, includeUM=True),
         'x-hs-platform': 'firetv',
-        'x-country-code': 'IN',
+        'x-country-code': 'ZA',
         'x-hs-appversion': '7.42.0',
         'x-request-id': str(uuid4()),
         'x-hs-device-id': str(uuid4()),
